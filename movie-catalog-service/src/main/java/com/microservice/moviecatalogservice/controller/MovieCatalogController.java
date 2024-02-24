@@ -4,6 +4,7 @@ package com.microservice.moviecatalogservice.controller;
 import com.microservice.moviecatalogservice.model.CatalogItem;
 import com.microservice.moviecatalogservice.model.Movie;
 import com.microservice.moviecatalogservice.model.Rating;
+import com.microservice.moviecatalogservice.model.UserRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,15 +24,11 @@ public class MovieCatalogController {
     @RequestMapping("/{userId}")
     public List<CatalogItem>getCatalog(@PathVariable("userId")String userId){
 
-        List<Rating> ratings= Arrays.asList(
-                new Rating("123",4),
-                new Rating("345",5)
 
-        );
+        UserRating userRating= restTemplate.getForObject("http://localhost:8991/rating/user/list/"+userId,UserRating.class);
 
 
-
-        return ratings.stream().map(rating -> {
+        return userRating.getRatings().stream().map(rating -> {
             Movie forObject = restTemplate.getForObject("http://localhost:8998/movies/" + rating.getMovieId(), Movie.class);
             return new CatalogItem(forObject.getName(),"testCatalog",rating.getRating());
         }).collect(Collectors.toList());
