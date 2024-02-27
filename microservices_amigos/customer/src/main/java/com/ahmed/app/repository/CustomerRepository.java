@@ -1,4 +1,4 @@
-package com.ahmed.app.Repository;
+package com.ahmed.app.repository;
 
 import com.ahmed.app.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

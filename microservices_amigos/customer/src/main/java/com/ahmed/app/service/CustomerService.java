@@ -1,6 +1,6 @@
 package com.ahmed.app.service;
 
-import com.ahmed.app.Repository.CustomerRepository;
+import com.ahmed.app.repository.CustomerRepository;
 import com.ahmed.app.model.Customer;
 import com.ahmed.app.model.CustomerRegisterRequest;
 import org.springframework.stereotype.Service;
