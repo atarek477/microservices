@@ -1,8 +1,7 @@
 package com.ahmed.app.controller;
 
 
-import com.ahmed.app.model.FraudResponse;
-import com.ahmed.app.repository.FraudRepository;
+import com.ahmed.app.fraud.FraudResponse;
 import com.ahmed.app.service.FraudService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
