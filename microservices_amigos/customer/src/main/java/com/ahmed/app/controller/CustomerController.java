@@ -3,6 +3,7 @@ package com.ahmed.app.controller;
 import com.ahmed.app.model.CustomerRegisterRequest;
 import com.ahmed.app.service.CustomerService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/api/v1/customer")
-public record CustomerController(CustomerService customerService) {
+@AllArgsConstructor
+public class CustomerController {
+    private final CustomerService customerService;
 
 
     @PostMapping("/register")

@@ -97,24 +97,16 @@
 <!--    </dependency>-->
         
 <!--    <dependency>-->
-<!--            -->
+
 <!--      <groupId>org.springframework.cloud</groupId>-->
-<!--            -->
+
 <!--      <artifactId>spring-cloud-starter</artifactId>-->
-<!--            -->
+
 <!--      <scope>compile</scope>-->
-<!--          -->
+
 <!--    </dependency>-->
         
-<!--    <dependency>-->
-<!--            -->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--            -->
-<!--      <artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
-<!--            -->
-<!--      <scope>compile</scope>-->
-<!--          -->
-<!--    </dependency>-->
+
         
 <!--    <dependency>-->
 <!--            -->
@@ -130,19 +122,19 @@
         
     <dependencies>
             
-<!--      <dependency>-->
-<!--                -->
-<!--        <groupId>org.springframework.cloud</groupId>-->
-<!--                -->
-<!--        <artifactId>spring-cloud-dependencies</artifactId>-->
-<!--                -->
-<!--        <version>${spring-cloud.version}</version>-->
-<!--                -->
-<!--        <type>pom</type>-->
-<!--                -->
-<!--        <scope>import</scope>-->
-<!--              -->
-<!--      </dependency>-->
+      <dependency>
+
+        <groupId>org.springframework.cloud</groupId>
+
+        <artifactId>spring-cloud-dependencies</artifactId>
+
+        <version>${spring-cloud.version}</version>
+
+        <type>pom</type>
+
+        <scope>import</scope>
+
+      </dependency>
             
       <dependency>
                 
@@ -265,6 +257,7 @@
       
     <module>customer</module>
     <module>fraud</module>
+    <module>eurekaserver</module>
 
 
   </modules>
