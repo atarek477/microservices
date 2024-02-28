@@ -2,6 +2,8 @@ package com.ahmed.app.service;
 
 import com.ahmed.app.fraud.FraudClient;
 import com.ahmed.app.fraud.FraudResponse;
+import com.ahmed.app.notification.NotificationClient;
+import com.ahmed.app.notification.NotificationRequest;
 import com.ahmed.app.repository.CustomerRepository;
 import com.ahmed.app.model.Customer;
 import com.ahmed.app.model.CustomerRegisterRequest;
@@ -15,6 +17,7 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
     private final RestTemplate restTemplate;
     private final FraudClient fraudClient;
+    private final NotificationClient notificationClient;
 
 
 
@@ -35,6 +38,15 @@ public class CustomerService {
               {
                   throw new IllegalStateException("isFraudster");
               }
+
+              notificationClient.sendNotification(new NotificationRequest(
+                     String.format("hi %s , welcome to ahmed",customer.getFirstname()),
+                      customer.getEmail(),
+
+                      customer.getId()
+
+
+              ));
 
     }
 }
