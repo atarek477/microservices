@@ -31,14 +31,13 @@ public class CustomerService {
 
                customerRepository.saveAndFlush(customer);
 
-//        FraudResponse fraudResponse = restTemplate.getForObject("http://fraud/api/v1/fraud/{customerId}", FraudResponse.class, customer.getId());
         FraudResponse fraudResponse= fraudClient.isFraudster(customer.getId());
-
+        System.out.println(fraudResponse.isFraudster());
               if (fraudResponse.isFraudster())
               {
-                  throw new IllegalStateException("isFraudster");
+                  System.out.println("in");
               }
-
+        System.out.println("out");
               notificationClient.sendNotification(new NotificationRequest(
                      String.format("hi %s , welcome to ahmed",customer.getFirstname()),
                       customer.getEmail(),
