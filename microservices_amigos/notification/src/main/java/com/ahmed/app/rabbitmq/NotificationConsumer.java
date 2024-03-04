@@ -18,7 +18,7 @@ public class NotificationConsumer {
     @RabbitListener(queues = "${spring.rabbitmq.queue.notification}")
     public void consumer(NotificationRequest notificationRequest) {
 
-        log.info("consumed from queue {}", notificationRequest);
+//        log.info("consumed from queue {}", notificationRequest);
         notificationService.send(notificationRequest);
     }
 

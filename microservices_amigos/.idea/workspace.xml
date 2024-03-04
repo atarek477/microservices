@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12c6bf5c-bd6d-4572-a374-9d7b24ab718b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/config/JwtAuthEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/ahmed/app/rabbitmq/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/ahmed/app/rabbitmq/NotificationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/configuration/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security/src/main/java/com/ahmed/security/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../security/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2dEwzaNZ07fPHlVTHWafjdbNNdQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.notification">
+    <configuration name="apigw" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.ahmed.app.ApiGWApplication" />
+      <module name="apigw" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="customer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.ahmed.app.CustomerApplication" />
+      <module name="customer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="eureka" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.ahmed.app.EurekaServerApplication" />
+      <module name="eurekaserver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fraud" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.ahmed.app.FraudApplication" />
+      <module name="fraud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="notification" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.ahmed.app.NotificationApplication" />
+      <module name="notification" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.customer" />
+      <item itemvalue="Application.apigw" />
+      <item itemvalue="Application.eureka" />
+      <item itemvalue="Application.fraud" />
+      <item itemvalue="Application.notification" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12c6bf5c-bd6d-4572-a374-9d7b24ab718b" name="Changes" comment="" />
+      <created>1709586811001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709586811001</updated>
+    </task>
+    <servers />
+  </component>
+</project>
